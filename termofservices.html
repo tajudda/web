@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FT Project</title>
+    <link rel="stylesheet" href="edit.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="header">
+        <img src="back.png">
+      </div>
+      <div id="navbar">
+        <a href="index.php">Home</a>
+        <a href="blog.php">Blog</a>
+        <a href="contact.php">Contact</a>
+        <a href="about.php">About</a>
+        <a href="history.php">History</a>
+        <a href="logout.php"style="float: right"><li>Logout</li></a>
+        </div>
+      <div class="content">
+          <h2>Term of Services</h2>
+        <div style="margin-left: 80px"><img src="logo.png" width="100" height="100"></div>
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">IMPORTANT NOTICE</h4>
+        <p>
+            The following Terms and Conditions, as may be revised by FT Project (the "Company") and its subsidiaries and affiliates 
+            (together with the Company, the "Group") from time to time without notice, apply to your access to, and use of, this web site.
+            Please read all these terms and conditions carefully. By accessing this web site and any of the pages hereof, you are agreeing to be bound by the terms and conditions below. 
+            If you are not agreeable to the terms and conditions set out below, do not access this web site or any of the pages hereof.
+        </p>
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">NO WARRANTY GIVEN BY THE GROUP</h4>
+        <ol>
+            <li>This web site is updated periodically and therefore may not contain the latest details, information and data relating to the products, 
+                services and facilities of the Group or other matters. The Group does not warrant the accuracy, adequacy, currency or completeness of any of the information or materials contained in this web site, 
+                and expressly disclaims all liability for errors or omissions in such information and materials. Any marketing, promotional and other information contained in this web site relating to any of the products, services and facilities of the Group are provided for informational purposes only and shall not have any legal effect.
+                You should independently obtain and verify all information and materials by contacting the relevant corporation within the Group directly, before taking an action in reliance thereon.</li>
+            <li>No warranty of any kind, express, implied or statutory, is given by the Group in relation to this web site or any of the information, data, materials or facilities contained or incorporated in it. 
+                In particular, without limiting the generality of the foregoing, no warranty is given by the Group in relation to the freedom from computer viruses or other corrupting or destructive codes, agents, programs, 
+                macros or effects arising in or transmitted through this web site, or the security of information relayed by you or the Group through this web site, or the prompt, complete and uninterrupted access to all the contents of this web site, 
+                or the accuracy, adequacy, currency or completeness of the contents of this web site [or any web site hyperlinked to this web site]. 
+                You have sole responsibility for adequate protection and backup of data and equipment and to take all necessary precautions to scan for, and protect against, computer viruses or other corrupting or destructive codes, agents, programs, macros or effects.</li>
+            <li>In no event shall the Group be liable for any damages, including without limitations direct or indirect, special, incidental, or consequential damages, whatsoever resulting from access or use, or inability to access or use this web site or arising out of any materials, 
+                information, qualifications or recommendations on this web site.</li>
+        </ol>
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">NO INVESTMENT OFFER OR ADVICE</h4> 
+        <p>
+            The information and matters contained in this web site are of a general nature, and no legal, tax or other advice is given by the Group in this web site. 
+            Nothing in this web site shall be construed as advice or encouragement from the Group to you regarding the making of any commercial, business or investment decision, 
+            and you are put on notice to obtain independent professional or financial advice before making any decision or taking any action in relation to any of the information or matters raised in this web site. 
+        </p>
+        <h4 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">ACCESS TO WEB SITE</h4>
+        <ol>
+            <li>
+                By accessing this web site, you are deemed to submit to the non-exclusive jurisdiction of the courts of Indonesia. 
+                Your access to and use of this web site and these Terms and Conditions are governed by and construed in accordance with Indonesian law.
+            </li>
+            <li>
+                The Group cannot provide selective access to this web site by allowing access to some but not all jurisdictions. 
+                Accordingly, if your access to or use of this web site is illegal or unlawful or restricted by the laws of your jurisdiction, 
+                please discontinue such access and use and/or comply with such restrictions (as applicable) immediately.
+            </li>
+            <li>
+                All information and data submitted to the Group via this web site (whether by email or otherwise) shall become the property of the Group and 
+                the Group shall be free to use for any lawful purpose (including without limitation reproduction, disclosure to third parties, transmission, publication, broadcast, further posting, and the development, manufacture, marketing and promotion of products, services and facilities), such information and data and/or any ideas, concepts, 
+                know-how or techniques contained in such information and data, and shall not be subject to any obligation of confidentiality in relation to such information and data.
+            </li>
+        </ol>
+
+      </div>
+
+</div>
+  <div id="flip">Click for more information</div>
+    <div id="panel">We deserve term of services in this website. Go look at
+  <br></br>
+  <a href="termofservices.html">Term of Services
+</div></a>
+
+</body>
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+</html>

@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    font-size: 28px;
+    background-image: url('3132.jpg');
+    background-size: cover;
+  }
+#bagimg{
+  background-image: url('ground.png');
+  height:460px ;
+  width: 100%;
+}
+#noimg{
+ background-image: none;
+}
+
+  
+  .header {
+    background-color:white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  #navbar {
+    overflow: hidden;
+    background-color:black;
+    z-index: 1;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  #navbar a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: grey;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(167, 167, 224);
+  border: solid 1px rgb(163, 152, 152);
+}
+#flip{cursor: pointer;}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 400px;
+}
+.column a{text-decoration: none;}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.grupQuote{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.qcontent{
+  background-color: rgb(230, 221, 221);
+  width: 20%;
+  margin: 10px;
+  padding: 20px;
+
+}
+
+.container {
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.kontak{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.kontak-isi{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.kontak-isi a{text-decoration: none;}
+
+/* .container {
+  padding: 16px;
+} */
+          
+input[type=text], input[type=password] {
+  width: 500px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+          
+input[type=text]:focus, input[type=password]:focus {
+  outline: none;
+}
+          
+/* hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+} */
+          
+.registerbtn {
+  background-color: grey;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 500px;
+  opacity: 0.9;
+}
+          
+.registerbtn:hover {
+  opacity: 1;
+}
+
+section{
+  width: 100%;
+  min-height: 400px;
+  background-color: gray;
+}
+.login{
+  width: 30%;
+  height: 300px;
+  background-color:whitesmoke;
+  margin: 5% auto;
+  padding: 2%;
+}
+.login form input[type=text],
+.login form input[type=password] {
+  width: 90%;
+  height: 30px;
+  margin: 1% 0;
+  padding-left: 1%;
+}
+out{
+  float: right;
+}
